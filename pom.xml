@@ -13,8 +13,8 @@
 
     <!-- Paramètres gestionnaire de version (Subversion) -->
     <scm>
-        <connection>scm:git:https://github.com/philippart-s/groovy-examples</connection>
-        <developerConnection>scm:git:https://github.com/philippart-s/groovy-examples</developerConnection>
+        <connection>scm:git:https://github.com/philippart-s/jenkins-examples</connection>
+        <developerConnection>scm:git:https://github.com/philippart-s/jenkins-examples</developerConnection>
         <tag>HEAD</tag>
     </scm>
 

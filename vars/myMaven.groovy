@@ -1,7 +1,7 @@
 import fr.ourson.utils.Utilities
 
 /**
- * Global var example.
+ * Custom step example.
  * @param args The maven args
  */
 def call(String args) {

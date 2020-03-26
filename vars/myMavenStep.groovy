@@ -1,8 +1,8 @@
 import fr.ourson.utils.Utilities
 
 /**
- * Custom step example.
- * @param args The maven args
+ * Custom full step example.
+ * @param config Step parameters
  */
 def call(Map config) {
 
@@ -20,5 +20,4 @@ def call(Map config) {
             echo 'Deploying....'
         }
     }
-    util.mvn(args)
 }

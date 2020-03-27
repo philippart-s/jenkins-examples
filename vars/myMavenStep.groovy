@@ -11,7 +11,7 @@ def call(Map config) {
     node() {
         stage('Build') {
             echo 'Building..'
-            myMaven config.mvnArgs
+            util.mvn config.mvnArgs
         }
         stage('Test') {
             echo 'Testing..'

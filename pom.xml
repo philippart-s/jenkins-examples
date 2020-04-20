@@ -97,7 +97,7 @@
                         <configuration>
                             <sources>
                                 <source>src</source>
-                                <source>scripts</source>
+                                <source>vars</source>
                             </sources>
                         </configuration>
                     </execution>

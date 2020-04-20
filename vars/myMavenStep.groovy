@@ -6,9 +6,10 @@ import fr.ourson.utils.Utilities
  */
 def call(Map config) {
 
+   echo 'Hello'
     Utilities util = new Utilities(this)
 
-    node() {
+    node {
         stage('Build') {
             echo 'Building..'
             util.mvn config.mvnArgs

@@ -1,14 +1,14 @@
 package fr.ourson
 
 import com.lesfurets.jenkins.unit.BasePipelineTest
-import org.junit.Before
-import org.junit.Test
+import org.junit.jupiter.api.BeforeEach
+import org.junit.jupiter.api.Test
 
 class SayHelloTest extends BasePipelineTest {
     def steps
 
     @Override
-    @Before
+    @BeforeEach
     void setUp() throws Exception {
         // Positionnement de l'endroit où on trouve les sources et les différentes ressources
         this.scriptRoots += "test/resources"

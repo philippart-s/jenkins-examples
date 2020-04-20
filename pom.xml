@@ -8,7 +8,7 @@
     <name>Divers exemples autour de Jenkins</name>
 
     <properties>
-        <junit.jupiter.version>5.3.1</junit.jupiter.version>
+        <junit.jupiter.version>5.6.1</junit.jupiter.version>
     </properties>
 
     <!-- Paramètres gestionnaire de version (Subversion) -->
@@ -53,34 +53,10 @@
             <version>2.4.6</version>
         </dependency>
 
-        <!-- Lib Jenkins -->
-        <dependency>
-            <groupId>org.jenkins-ci.main</groupId>
-            <artifactId>jenkins-core</artifactId>
-            <version>2.150</version>
-            <scope>provided</scope>
-        </dependency>
-
-        <!-- Gestion de l'annotation @NonCPS -->
-        <dependency>
-            <groupId>com.cloudbees</groupId>
-            <artifactId>groovy-cps</artifactId>
-            <version>1.1</version>
-            <scope>provided</scope>
-        </dependency>
-
-        <!-- https://wiki.jenkins.io/display/JENKINS/Pipeline+Plugin -->
-        <dependency>
-            <groupId>org.jenkins-ci.plugins.workflow</groupId>
-            <artifactId>workflow-step-api</artifactId>
-            <version>2.1</version>
-            <scope>provided</scope>
-        </dependency>
-
         <!-- Testing -->
         <dependency>
-            <groupId>org.junit.vintage</groupId>
-            <artifactId>junit-vintage-engine</artifactId>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter</artifactId>
             <version>${junit.jupiter.version}</version>
             <scope>test</scope>
         </dependency>
@@ -97,37 +73,11 @@
             <scope>test</scope>
         </dependency>
         <dependency>
-            <groupId>org.apache.maven</groupId>
-            <artifactId>maven-core</artifactId>
-            <version>3.6.0</version>
-            <scope>test</scope>
-        </dependency>
-        <dependency>
             <groupId>org.mockito</groupId>
             <artifactId>mockito-core</artifactId>
             <version>2.27.0</version>
             <scope>test</scope>
         </dependency>
-        <dependency>
-            <groupId>org.mock-server</groupId>
-            <artifactId>mockserver-netty</artifactId>
-            <version>3.10.8</version>
-            <scope>test</scope>
-        </dependency>
-        <dependency>
-            <groupId>org.mock-server</groupId>
-            <artifactId>mockserver-client-java</artifactId>
-            <version>3.10.8</version>
-            <scope>test</scope>
-        </dependency>
-        <!-- https://mvnrepository.com/artifact/com.google.guava/guava -->
-        <dependency>
-            <groupId>com.google.guava</groupId>
-            <artifactId>guava</artifactId>
-            <version>27.1-jre</version>
-            <scope>test</scope>
-        </dependency>
-
     </dependencies>
 
     <build>
@@ -147,7 +97,7 @@
                         <configuration>
                             <sources>
                                 <source>src</source>
-                                <!--<source>vars</source>-->
+                                <source>scripts</source>
                             </sources>
                         </configuration>
                     </execution>

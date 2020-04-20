@@ -1,0 +1,3 @@
+@Library('ourson-lib') _
+
+myMavenStep mvnArgs: 'clean compile'

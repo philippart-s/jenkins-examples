@@ -1,7 +1,7 @@
 package fr.ourson.utils
 
 /**
- * Utility class example for a pipeline
+ * Classe d'exemple représentant une classe utilitaire pour un pipeline.
  */
 class Utilities implements Serializable{
     Script steps
@@ -11,7 +11,7 @@ class Utilities implements Serializable{
     }
 
     /**
-     * Simple method to exceute maven commands
+     * Méthode permettant d'exécuter une commande Maven.
      * @param args Maven arguments.
      */
     void mvn(String args) {

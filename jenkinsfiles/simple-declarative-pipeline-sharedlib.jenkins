@@ -1,0 +1,28 @@
+@Library('ourson-lib') _
+
+import fr.ourson.utils.Utilities
+def utils = new Utilities(this)
+pipeline {
+    agent any
+
+    stages {
+        stage('Build') {
+            steps {
+                echo 'Building..'
+                script {
+                    utils.mvn 'clean package'
+                }
+            }
+        }
+        stage('Test') {
+            steps {
+                echo 'Testing..'
+            }
+        }
+        stage('Deploy') {
+            steps {
+                echo 'Deploying....'
+            }
+        }
+    }
+}

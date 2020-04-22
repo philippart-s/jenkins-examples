@@ -1,0 +1,17 @@
+@Library('ourson-lib') _
+
+import fr.ourson.utils.Utilities
+def utils = new Utilities(this)
+
+node {
+    stage('Build') {
+        echo 'Building..'
+            utils.mvn 'clean package'
+        }
+    stage('Test') {
+        echo 'Testing..'
+    }
+    stage('Deploy') {
+        echo 'Deploying....'
+    }
+}

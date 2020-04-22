@@ -1,14 +1,10 @@
 import fr.ourson.utils.Utilities
 
-/**
- * Custom full step example.
- * @param config Step parameters
- */
 def call(Map config) {
 
     Utilities util = new Utilities(this)
 
-    node() {
+    node {
         stage('Build') {
             echo 'Building..'
             util.mvn config.mvnArgs
